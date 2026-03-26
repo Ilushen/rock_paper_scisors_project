@@ -3,9 +3,16 @@ function getComputerChoice(){
     if (random_number == 1)
         return "rock";
     if (random_number == 2)
-        return "Scissors";
+        return "scissors";
     else
-        return "Paper";
+        return "paper";
 }
 
-alert(getComputerChoice())
+//alert(getComputerChoice())
+
+function getHumanChoice(){
+    let user_choice = prompt("Enter one choice rock,paper or scissors");
+    return user_choice;
+}
+
+alert(getHumanChoice());
