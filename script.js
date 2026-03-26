@@ -1,3 +1,6 @@
+let humanScore = 0;
+let computerScore = 0;
+
 function getComputerChoice(){
     let random_number =  Math.floor(Math.random() * 3);
     if (random_number == 1)
@@ -15,4 +18,4 @@ function getHumanChoice(){
     return user_choice;
 }
 
-alert(getHumanChoice());
+//alert(getHumanChoice());
