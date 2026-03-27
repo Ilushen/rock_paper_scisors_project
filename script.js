@@ -48,7 +48,7 @@ cont.appendChild(score_result);
 function playGame(choice){
 
     let turn = 0;
-    let round = ""
+    let round = "";
     
     function playRound(humanChoice,computerChoice) {
 
