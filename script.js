@@ -67,14 +67,27 @@ function playGame(choice){
         }  
 
         round_result.textContent =  round;
+        
 
     }
 
     playRound(choice,getComputerChoice());
 
-    
-    score_result.textContent = "Your Total Score is: "+humanScore+" and the computer Total Score is "+computerScore;
+    if (check_winner() == 1)
+        score_result.textContent = "You winn!!!!! Your Total Score is: "+humanScore+" and the computer Total Score is "+computerScore;
+    else if (check_winner() == 2)
+        score_result.textContent = "You Loose!!!!! Your Total Score is: "+humanScore+" and the computer Total Score is "+computerScore;
+    else if (check_winner() == 0)
+        score_result.textContent = "Your Total Score is: "+humanScore+" and the computer Total Score is "+computerScore;
 
 }
 
 
+function check_winner(){
+    if (humanScore == 5)
+        return 1;
+    else if (computerScore == 5)
+        return 2;
+    else
+        return 0
+}
